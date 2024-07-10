@@ -1,0 +1,99 @@
+body {
+    background-color: #151515;
+    font-family: Tahoma, Arial, sans-serif;
+    overflow: hidden;
+    color: #EEE;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#container {
+    width: 250px;
+    padding: 8px 8px 20px 8px;
+    margin: 20px auto;
+    background-color: #434343;
+    border-radius: 4px;
+    border: 2px solid #666;
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .1);
+}
+
+#display {
+    display: block;
+    margin: 15px auto;
+    height: 42px;
+    width: 200px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: 2px solid #666;
+    background-color: #666;
+    box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);
+    font-size: 28px;
+    color: #EEE;
+    text-align: right;
+    font-weight: 400;
+}
+
+.button {
+    display: inline-block;
+    margin: 2px;
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #434343;
+    border: 2px solid #666;
+    color: #EEE;
+}
+
+.mathButtons {
+    margin: 2px 2px 6px 2px;
+    color: #EEE;
+    text-shadow: -1px -1px 0px #44006F;
+    background-color: #333;
+    border: 2px solid #666;
+    box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #2E2E2E;
+}
+
+.digits {
+    color: #EEE;
+    text-shadow: 1px 1px 0px #333;
+    background-color: #666;
+    border: 2px solid #333;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #555;
+}
+
+.digits:hover,
+.mathButtons:hover,
+#clearButton:hover {
+    background-color: #FFBA75;
+    box-shadow: 0px 0px 2px #FFBA75, inset 0px -20px 1px #FF8000;
+    border: 2px solid #AE5700;
+}
+
+#clearButton {
+    color: #EEE;
+    text-shadow: -1px -1px 0px #44006F;
+    background-color: #D20000;
+    border: 2px solid #800000;
+    box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #B00000;
+}
+
+.zoom-in {
+    /* Adjust scale values as needed */
+    transform: scale(1.2);
+}
+
+.zoom-out {
+    /* Adjust scale values as needed */
+    transform: scale(0.8);
+}
